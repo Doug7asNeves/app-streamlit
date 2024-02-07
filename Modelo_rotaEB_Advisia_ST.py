@@ -37,7 +37,7 @@ import listas
 
 def main():
 
-    path_pkl = os.environ["USERPROFILE"] + "\\Dropbox (ADVISIA)\\202307 - CSN\\04. Data Gathering\\02. Code\\Pickle modelos\\"
+    path_pkl = "path_pkl"
     
     st.set_page_config(page_title="CSN App", page_icon=":metal:")
 
