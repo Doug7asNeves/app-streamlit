@@ -8,13 +8,13 @@ import pickle
 
 def import_scalers(path_pkl) -> tuple:
 
-    with open(os.path.join(path_pkl, "Preprocessadores", "scalers_severe_DT.pkl"), "rb") as file:
+    with open("scalers_severe_DT.pkl", "rb") as file:
         scalers_severe_DT = pickle.load(file)
 
-    with open(os.path.join(path_pkl, "Preprocessadores", "scalers_severe_EB.pkl"), "rb") as file:
+    with open("scalers_severe_EB.pkl", "rb") as file:
         scalers_severe_EB = pickle.load(file)
 
-    with open(os.path.join(path_pkl, "Preprocessadores", "scalers_severe_MP.pkl"), "rb") as file:
+    with open("scalers_severe_MP.pkl", "rb") as file:
         scalers_severe_MP = pickle.load(file)
 
     return scalers_severe_DT, scalers_severe_EB, scalers_severe_MP
@@ -22,13 +22,13 @@ def import_scalers(path_pkl) -> tuple:
 def import_models(path_pkl) -> tuple:
     from pickle import load
 
-    with open(os.path.join(path_pkl,"regressao_linear_DT_severe.pkl"), "rb") as file:
+    with open("regressao_linear_DT_severe.pkl", "rb") as file:
         model_DT = pickle.load(file)
 
-    with open(os.path.join(path_pkl,"regressao_linear_EB_severe.pkl"), "rb") as file:
+    with open("regressao_linear_EB_severe.pkl", "rb") as file:
         model_EB = pickle.load(file)
 
-    with open(os.path.join(path_pkl,"regressao_linear_MP_severe.pkl"), "rb") as file:
+    with open("regressao_linear_MP_severe.pkl", "rb") as file:
         model_MP = pickle.load(file)
 
     return [model_DT, model_EB, model_MP]
