@@ -10,30 +10,6 @@ from pickle import load
 import utils
 import listas
 
-# def upload_file():
-#     st.subheader("Upload a File")
-#     uploaded_file = st.file_uploader("Choose a file", type=["txt", "csv", "xlsx"])
-#     if uploaded_file is not None:
-#         st.success("File uploaded successfully!")
-
-# def manual_input():
-#     st.subheader("Input Manual")
-#     user_input = st.text_input("Enter something:")
-   
-
-
-# def main():
-#     st.title("Streamlit Input Options App")
-
-#     # Escolha entre o input manual ou em Excel usando um slider/toggle
-#     option = st.sidebar.radio("Choose an input option:", ["Manual Input", "Upload a File"])
-
-#     # Mostrar o menu de opções para ambos inputs
-#     if option == "Manual Input":
-#         manual_input()
-#     elif option == "Upload a File":
-#         upload_file()
-
 
 def main():
 
